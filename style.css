@@ -1,0 +1,111 @@
+@import url(//db.onlinewebfonts.com/c/7cf64c7c87276605ccac7803b3ffde77?family=Gputeks);
+
+@font-face {
+  font-family: "Gputeks"; src: url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.eot"); src: url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.woff") format("woff"), url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7cf64c7c87276605ccac7803b3ffde77.svg#Gputeks") format("svg"); 
+}
+
+.btn {
+  font-size: 20px;
+  font-family: gputeks;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-image: url("");display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: -1;
+}
+
+.blank:hover {
+  cursor: not-allowed;
+}
+
+.full:hover {
+  cursor: grab;
+  animation: pulse 2s ease-in-out 0.75s infinite;
+}
+
+.full:active {
+  cursor: grabbing;
+}
+
+
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 312px;
+  height: 67px;
+}
+
+#subtitle {
+	text-align: center;
+	color: #FFFF00;
+	text-shadow: 1px 1px 0px #000;
+	position: relative;
+	left: 200px;
+	bottom: 50px;
+	animation: subtitle .25s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+#status {
+  font-family: Gputeks;
+  display: block;
+  position: absolute;
+  right: 60mm;
+  top: 25mm;
+  font-size: 20px;
+  color: purple;
+}
+
+.pop {
+  animation: pop 0.58s infinite;
+  -webkit-animation: pop 0.58s infinite;
+}
+
+@keyframes pop {
+    from {
+        transform:scale(0.95)
+    }
+    50% {
+        transform:scale(1)
+    }
+    to {
+        transform:scale(0.95)
+    }
+}
+
+@-webkit-keyframes pop {
+    from {
+        -webkit-transform:scale(0.95)
+    }
+    50% {
+        -webkit-transform:scale(1)
+    }
+    to {
+        -webkit-transform:scale(0.95)
+    }
+}
+
+.tilt {
+  -ms-transform: rotate(-25deg);
+  -webkit-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
